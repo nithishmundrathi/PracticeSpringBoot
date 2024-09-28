@@ -6,11 +6,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class FirstSpringProjectApplication {
-
+	public final static test="nithish";
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context=SpringApplication.run(FirstSpringProjectApplication.class, args);
 		Dilpasand d=context.getBean(Dilpasand.class);
 		d.showMessage();
 	}
+	
 
 }
